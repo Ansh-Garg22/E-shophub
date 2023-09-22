@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+ 
+<body>
+    <div class="main">
+        <section id="header1">
+            <div id="header">
+                <a href="#" class="logo" style="color:black;"><i class="fa-brands fa-slack"></i></a>
+                <div>
+                    <ul class="head">
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="index.html">Shop</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="laptop1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+                <div id="bar"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <div class="dropdown">
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="home_page.html">Shop</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="laptop2.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </div>
+        </section>
+        <section class="login">
+            <div class="center">
+                <h1>Login</h1>
+                <form method="post">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <label for="">USERNAME</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="pass">Forgot Password?</div>
+                    <div class="boss"> <input type="submit" value="Login"></div>
+                    <div class="signup_link">
+                        Not a member? <a href="register.html">Signup</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        const bar = document.querySelector('#bar');
+        const dropdown = document.querySelector('.dropdown');
+        bar.onclick = function () {
+            dropdown.style.display="block";
+
+            setTimeout(function(){
+                dropdown.style.display="none";
+            },2000)
+        };
+    </script>
+</body>
+
+</html>

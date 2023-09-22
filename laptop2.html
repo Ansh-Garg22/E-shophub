@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icons8-shop-48.ico.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SHOPPING</title>
+</head>
+
+<body>
+
+    <!-- Nav bar header -->
+    <section id="header1">
+        <div id="header">
+            <a href="#" class="logo"><i class="fa-brands fa-slack"></i></a>
+            <div>
+                <ul class="head">
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="home_page.html">Shop</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div id="bar"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="home_page.html">Shop</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </div>
+    </section>
+    
+    <!-- Nav bar header close-->
+
+    <!-- section 1 image  -->
+    <section class="head_img">
+        <div class="p_tag1">
+            <p>GREAT DEALS</p>
+            <P>EXITING PRIZES WITH </P>
+            <P>MORE THAN 30% DISCOUNT OFFERS</P>
+        </div>
+    </section>
+    <!--END-->
+    <hr>
+
+    <!-- main body -->
+    <div class="mainbd">
+        <section id="body1">
+
+            <!-- left body -->
+            <div class="left">
+                <div class="leftpart">
+                    <div><img id="mainImage" src="https://m.media-amazon.com/images/I/61J++6x4ezL._AC_UY327_FMwebp_QL65_.jpg"></div>
+                    <div>
+                        <img class="image" src="https://m.media-amazon.com/images/I/51-qYxIfJwL._AC_UY327_FMwebp_QL65_.jpg" alt="Image 3" onclick="changeMainImage('https://m.media-amazon.com/images/I/51-qYxIfJwL._AC_UY327_FMwebp_QL65_.jpg')">
+                        <img class="image" src="https://m.media-amazon.com/images/I/71Hx1SjCFIL._AC_UY327_FMwebp_QL65_.jpg" alt="Image 4" onclick="changeMainImage('https://m.media-amazon.com/images/I/71Hx1SjCFIL._AC_UY327_FMwebp_QL65_.jpg')">
+                        <img class="image" src="https://m.media-amazon.com/images/I/61ZbmBmQbqL._AC_UY327_FMwebp_QL65_.jpg" alt="Image 4" onclick="changeMainImage('https://m.media-amazon.com/images/I/61ZbmBmQbqL._AC_UY327_FMwebp_QL65_.jpg')">
+                    </div>
+                    <script>
+                        function changeMainImage(imageUrl) {
+                        var mainImage = document.getElementById('mainImage');
+                        mainImage.src = imageUrl;
+                        }
+                    </script>
+                    <ul class="btn1" style="list-style: none;">
+                        <li><button class="addbtn myButton"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Add To Cart</button></li>
+                        <li><button class="buybtn" onclick="window.location.href='buynow.html';"><i class="fa-solid fa-indian-rupee-sign"></i> Buy Now</button></li>
+                    </ul>
+                </div>
+                <script>
+                    var button = document.querySelector(".myButton");
+                    
+                    button.addEventListener("click", function() {
+                      alert("SORRY WE ARE WORKING ON THIS AS IT INCLUDES DATABASE RELATED CONCEPT WE DIDN'T ADD THIS OPTION YET (you may check for buy now button it is working )");
+                    });
+                </script>
+            </div>
+            <!-- right body -->
+            <div class="right">
+    
+                <div class="price">
+                    <h4>ALIENWARE Core i9 10th Gen - (32 GB/1 TB SSD/Windows 10 Home/8 GB Graphics/NVIDIA GeForce RTX 2080 with Max-Q) m15R3 Gaming Laptop </h4>
+                    <h3> (15.6 inch, Lunar Light, 2.5 kg, With MS Office)</h3>
+                    <hr>
+                    <h3>
+                        <SPAN style="color:red">-40%</SPAN> ₹3,25,990</h3>
+                    <h5 style="padding:2px">M.R.P : ₹5,52,657</h5>
+                    <h5 style="padding:2px">Inclusive of all taxes</h5>
+                    <hr>
+                </div>
+    
+                <div class="details">
+                    <h2>Product Details :-</h2>
+                    <br>
+                    <table class="table_details">
+                        <tr>
+                            <td>Sales Package</td>
+                            <td>Laptop,Power Adaptor,Warranty,Mouse,Headphone</td>
+                        </tr>
+                        <tr>
+                            <td>Model Number</td>
+                            <td>D569919WIN9</td>
+                        </tr>
+                        <tr>
+                            <td>Series</td>
+                            <td> DELL ALIENWARE</td>
+                        </tr>
+                        <tr>
+                            <td>Power Supply</td>
+                            <td>120W AC Adapter</td>
+                        </tr>
+                        <tr>
+                            <td>SSD Capacity</td>
+                            <td>1 TB 32GB(RAM)</td>
+                        </tr>
+                        <tr>
+                            <td>OS Architecture</td>
+                            <td>64 bit</td>
+                        </tr>
+                    </table>
+    
+                </div>
+                <div class="det_items">
+                    <br>
+                    <h2>About this item :-</h2>
+                    <br>
+                    <ul>
+                        <li>Processor: Core i9 10th Gen, 26 cores (18 P-cores and 8 E-cores), 4.6 GHz Base Speed, Up to 6.2 GHz Max Turbo Speed, 32MB Cache</li>
+                        <li>Memory: 32GB (16GB SO-DIMM *2) DDR5 6400MHz, Support Up to 64GB | Storage: 1TB SSD M.2 NVMe PCIe 4.0</li>
+                        <li>Keyboard: Backlit Chiclet Keyboard</li>
+                        <li>Other: Wi-Fi 6.1 (802.11ax) 2*2 + Bluetooth 5.3 | Built-in array microphone | 1080P FHD camera</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <section id="addbanner" class="section-p1">
+        <div class="banner-box box1 ">
+            <h4>Discover crazy deals</h4>
+            <h2>Get 40% off on samsung mobiles till 4 days!</h2>
+            <br>
+            <span>*Headphones to be gifted to first 50 costumers</span>
+            <button class="white">Learn more</button>
+        </div>
+        <div class="banner-box box2 ">
+            <h2>Get a chance to win smartwatch on some special laptops</h2>
+            <br>
+            <span>Limited time offer! grab this opportunity and be a lucky costumer</span>
+            <button class="white">Learn more</button>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- review section  -->
+    <div class="heading_rev">
+        <h2 align="center">Review Section</h2>
+    </div>
+    <section id="review-full">
+        <div class="review">
+            <div class="rev1">
+                <div class="top">
+                    <strong><i class="fa-solid fa-user"></i> Harsh Sinha</strong>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>Gaming in this laptop is so impressive , i like this laptop, best value for money laptop </p>
+                </div>
+                <div>
+                    <button class="btn myButton2">Helpful ?</button>
+
+                </div>
+                <script>
+                    var button = document.querySelector(".myButton2");
+                    
+                    button.addEventListener("click", function() {
+                      alert("THANK YOU FOR YOUR RESPONSE");
+                    });
+                </script>
+
+            </div>
+            <div class="rev1">
+                <div class="top">
+                    <strong><i class="fa-solid fa-user"></i> Ankit kum ar</strong>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>Completely worth it product, its display is so amazing, purchase it if possible, best reccomendation</p>
+                </div>
+                <div>
+                    <button class="btn myButton3">Helpful ?</button>
+                </div>
+                <script>
+                    var button = document.querySelector(".myButton3");
+                    
+                    button.addEventListener("click", function() {
+                      alert("THANK YOU FOR YOUR RESPONSE");
+                    });
+                </script>
+            </div>
+            <div class="rev1">
+                <div class="top">
+                    <strong><i class="fa-solid fa-user"></i> Yashraj Vishnoi</strong>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>Best gaming laptop at good price, the price segment is also good, purchase it if possible </p>
+                </div>
+                <div>
+                    <button class="btn myButton4">Helpful ?</button>
+                </div>
+                <script>
+                    var button = document.querySelector(".myButton4");
+                    
+                    button.addEventListener("click", function() {
+                      alert("THANK YOU FOR YOUR RESPONSE");
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="post">
+            <h3>Add Your Review :</h3>
+            <!-- <input type="text" name="text"> -->
+            <textarea name="address" id="address" cols=50 rows=3 placeholder="Type your Review about product "></textarea>
+            <br>
+            <input type="submit" value="SEND">
+        </div>
+    </section>
+    <hr>
+
+
+    
+
+    <!-- feature section -->
+    <!-- <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item" id="item1">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3 class="feature-title">Fast Shipping</h3>
+                    <p class="feature-description">Get your products delivered quickly with our fast shipping options.</p>
+                </div>
+                <div class="feature-item" id="item2">
+                    <i class="fas fa-credit-card"></i>
+                    <h3 class="feature-title">Happy sale</h3>
+                    <p class="feature-description">Shop during sale to get more benifits and save your money</p>
+                </div>
+                <div class="feature-item" id="item3">
+                    <i class="fas fa-credit-card"></i>
+                    <h3 class="feature-title">Secure Payments</h3>
+                    <p class="feature-description">Shop with confidence using our secure payment methods.</p>
+                </div>
+                <div class="feature-item" id="item4">
+                    <i class="fas fa-headset"></i>
+                    <h3 class="feature-title">24/7 Customer Support</h3>
+                    <p class="feature-description">Our friendly customer support team is available around the clock to assist you.</p>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+    <BR>
+    <BR>
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">About us</div>
+                    <p>Welcome to our electronic device shopping website!</p><br>
+                    <p>We value your feedback and continuously work towards improving our services.</p>
+                    </p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle_box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Better Price</a></div>
+                <div><a href="#">All Over The India</a></div>
+                <div><a href="#">Fast Delivery</a></div>
+                <div><a href="#">Best Quality</a></div>
+                <div><a href="#">24X7 Service</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const bar = document.querySelector('#bar');
+        const dropdown = document.querySelector('.dropdown');
+        bar.onclick = function () {
+            dropdown.style.display="block";
+
+            setTimeout(function(){
+                dropdown.style.display="none";
+            },2000)
+        };
+    </script>
+</body>
+
+</html>

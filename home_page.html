@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="icon" type="image/x-icon" href="icons8-48-32.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_home.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Nav bar header -->
+  <section id="header1">
+    <div id="header">
+        <a href="#" class="logo"><i class="fa-brands fa-slack"></i></a>
+        <div>
+            <ul class="head">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="home_page.html">Shop</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="contactus.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div id="bar"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="dropdown">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="home_page.html">Shop</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </div>
+</section>
+<script>
+  const bar = document.querySelector('#bar');
+  const dropdown = document.querySelector('.dropdown');
+  bar.onclick = function () {
+      dropdown.style.display="block";
+
+      setTimeout(function(){
+          dropdown.style.display="none";
+      },2000)
+  };
+</script>
+
+
+
+  <main>
+   
+    <div class="intro">
+      
+        <h1>ONLINE SHOPPING</h1>
+        <p style="font-weight: bold;">WELCOME TO OUR WEBSITE</p>
+        <p>Wishing you a lovely and happy day</p>
+        <button>SHOP NOW</button>
+      
+    </div>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://c1.wallpaperflare.com/preview/105/477/117/business-desk-girl-iphone.jpg" >
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://c0.wallpaperflare.com/preview/591/632/1019/25-30-year-old-blonde-hair-blue-dress.jpg">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://static.toiimg.com/thumb/msid-92852100,width-1280,resizemode-4/92852100.jpg" >
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+        let slideIndex = 1;
+        showSlides();
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          if (slideIndex < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          slideIndex++;
+          setTimeout(showSlides, 4000); // Set time gap in milliseconds (e.g., 2000ms = 2 seconds)
+        }
+        </script>
+
+
+<br>
+    <div class="backclock">
+      <section class="comming-soon">
+        <div>
+            <h2>We are comming soon!</h2>
+            <div class="countdown">
+                <div class="container-day">
+                    <h3 class="day">Time</h3>
+                    <h3>Day </h3>
+                </div>
+                <div class="container-hour">
+                    <h3 class="Hour">Time</h3>
+                    <h3>Hour</h3>
+                </div>
+                <div class="container-minute">
+                    <h3 class="Minute">Time</h3>
+                    <h3>Minute</h3>
+                </div>
+                <div class="container-second">
+                    <h3 class="Second">Time</h3>
+                    <h3>Second</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+  <script src="clock.js"></script>
+
+
+   
+
+    
+<div class="boxes">
+    <a href="laptop3.html">
+    <div class="item-box">
+      
+      <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/computer/f/1/z/-original-imagp7pfzd7vcysx.jpeg?q=70">
+      <p class="item-description">HP Pavilion Ryzen 5 Hexa Core 5625U - (8 GB/512 GB SSD/Windows 11 Home) With MS Office</p>
+      <p class="item-price">₹52,990<del class="it">₹61,023</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a>
+    <a href="laptop2.html">
+    <div class="item-box">
+      
+      <img src="https://m.media-amazon.com/images/I/61J++6x4ezL._AC_UY327_FMwebp_QL65_.jpg">
+      <p class="item-description">ALIENWARE Core i9 10th Gen - (32 GB/1 TB SSDGB Graphics/NVIDIA GeForce RTX 2080 ) Laptop </p>
+      <p class="item-price">₹3,25,990<del class="it">₹5,52,657</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+  </div></a><a href="laptop1.html">
+    <div class="item-box">
+      
+      <img src="https://rukminim1.flixcart.com/image/416/416/xif0q/computer/i/z/h/galaxy-book3-thin-and-light-laptop-samsung-original-imagnb2cuanuhzmp.jpeg?q=70">
+      <p class="item-description">SAMSUNG Galaxy Book3 Core i7  13th Gen - (16 GB/512 GB SSD/Windows 11 Home With MS Office) </p>
+      <p class="item-price">₹84,990  <del class="it">₹1,12,990</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a>
+    <a href="index.html"> 
+  
+    <div class="item-box">
+      
+      <img src="https://www.asus.com/media/Odin/Websites/global/ProductLine/20210913111540.png">
+      <p class="item-description">ASUS VivoBook 14 (2021) Celeron Dual Core -(4 GB/256 GB SSD/Windows 11 Home) Mac OS Big Sur</p>
+      <p class="item-price">₹70,990<del class="it">₹1,44,990</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a>
+    <a href="phone1.html">
+  
+    <div class="item-box">
+      
+      <img src="https://m.media-amazon.com/images/I/61amb0CfMGL._SL1500_.jpg">
+      <p class="item-description">OnePlus 11 5G (Eternal Green, 16GB RAM, 256GB Storage)</p>
+      <p class="item-price">₹55,895<del class="it">₹56,999</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a><a href="phone2.html">
+  
+    <div class="item-box">
+      
+      <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg">
+      <p class="item-description">Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage) with No Cost EMI</p>
+      <p class="item-price">₹1,09,999<del class="it">₹1,31,999</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a><a href="phone3.html">
+    <div class="item-box">
+      
+      <img src="https://m.media-amazon.com/images/I/61PW24157AL._SL1500_.jpg">
+      <p class="item-description">Google Pixel 6a 5G (Chalk, 6GB RAM, 128GB Storage) Powered by Tensor</p>
+      <p class="item-price">₹18,499<del class="it">₹21,599</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a><a href="phone1.html">
+  
+    <div class="item-box">
+      
+      <img src="https://static.digit.in/product/29f79e7eeacbb8e1ba68d3532fea60a387104965.jpeg?tr=w-1200">
+      <p class="item-description">OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 128GB)</p>
+      <p class="item-price">₹19,990<del class="it">₹22,890</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a><a href="headphone1.html">
+  
+    <div class="item-box">
+      
+      <img src="https://rukminim1.flixcart.com/image/832/832/l3vxbbk0/headphone/w/q/e/-original-imagewuzhfbtygzw.jpeg?q=70">
+      <p class="item-description">boAt Rockerz 510 Super Extra Bass Bluetooth Headset With Quality sound</p>
+      <p class="item-price">₹1,099<del class="it">₹3,490</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+      
+    
+    </div></a><a href="headp2.html">
+  
+    <div class="item-box">
+      
+      <img src="https://rukminim1.flixcart.com/image/832/832/xif0q/headphone/y/4/2/-original-imagh6fsczzf3fuv.jpeg?q=70">
+      <p class="item-description">Boult Audio Bass Bud Q2 with40mm Drivers,Punchy Deep Bass</p>
+      <p class="item-price">₹690<del class="it">₹2,499</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a>
+  
+    <a href="TV1.html"><div class="item-box">
+      
+      <img src="https://rukminim1.flixcart.com/image/832/832/kqv8vww0/television/4/h/k/ua43au8000-samsung-original-imag4s9pghk27wea.jpeg?q=70">
+      <p class="item-description">SAMSUNG 8 (43 inch) Ultra HD (4K) LED Smart Tizen TV With Extra Features</p>
+      <p class="item-price">₹42,390<del class="it">₹54,900</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a>
+    <a href="TV2.html">
+    <div class="item-box">
+       
+      <img src="https://m.media-amazon.com/images/I/81Itairz1YL._AC_UY327_FMwebp_QL65_.jpg">
+      <p class="item-description">OnePlus Q2 Pro 163 cm (65 inch) QLED Ultra HD (4K) Smart Google TV</p>
+      <p class="item-price">₹99,990<del class="it">₹1,59,999</del></p>
+      <div class="btn">
+        <button><i class="fa-solid fa-cart-shopping"></i>   BUY NOW</button>
+      </div>
+    </div></a>
+  </div>
+
+
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="feature-grid">
+          <div class="feature-item" id="item1">
+            <i class="fas fa-shipping-fast"></i>
+            <h3 class="feature-title">Fast Shipping</h3>
+            <p class="feature-description">Get your products delivered quickly with our fast shipping options.</p>
+          </div>
+          <div class="feature-item" id="item2">
+              <i class="fas fa-credit-card"></i>
+              <h3 class="feature-title">Happy sale</h3>
+              <p class="feature-description">Shop during sale to get more benifits and save your money</p>
+            </div>
+          <div class="feature-item" id="item3">
+            <i class="fas fa-credit-card"></i>
+            <h3 class="feature-title">Secure Payments</h3>
+            <p class="feature-description">Shop with confidence using our secure payment methods.</p>
+          </div>
+          <div class="feature-item" id="item4">
+            <i class="fas fa-headset"></i>
+            <h3 class="feature-title">24/7 Customer Support</h3>
+            <p class="feature-description">Our friendly customer support team is available around the clock to assist you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- <div class="about-me">
+      <div class="about-me-text">
+        <h2>About Me</h2>
+        <p>I am a web developer and I love to create websites. I am a very good developer and I am always looking for new projects. I am a very good developer and I am always looking for new projects.</p>
+      </div>
+      <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-shopping-mall-supermarket-selection-merchandise-poster-background-material-image_133225.jpg" alt="me">
+    </div> -->
+
+  </main>
+
+
+    <!-- footer section -->
+    <footer>
+      <div class="content">
+          <div class="left box">
+              <div class="upper">
+                  <div class="topic">About us</div>
+                  <p>Welcome to our electronic device shopping website!</p><br>
+                  <p>We value your feedback and continuously work towards improving our services.</p>
+                  </p>
+              </div>
+              <div class="lower">
+                  <div class="topic">Contact us</div>
+                  <div class="phone">
+                      <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+                  </div>
+                  <div class="email">
+                      <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                  </div>
+              </div>
+          </div>
+          <div class="middle_box">
+              <div class="topic">Our Services</div>
+              <div><a href="#">Better Price</a></div>
+              <div><a href="#">All Over The India</a></div>
+              <div><a href="#">Fast Delivery</a></div>
+              <div><a href="#">Best Quality</a></div>
+              <div><a href="#">24X7 Service</a></div>
+          </div>
+          <div class="right box">
+              <div class="topic">Subscribe us</div>
+              <form action="#">
+                  <input type="text" placeholder="Enter email address">
+                  <input type="submit" name="" value="Send">
+                  <div class="media-icons">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </footer>
+
+
+
+  
+
+
+
+  
+
+
+</body>
+
+</html>

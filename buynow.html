@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="buy.css">
+    <title>Buy Now</title>
+</head>
+<body>
+    <section class="header">
+        <div id="header">
+            <a href="#" class="logo"><i class="fa-brands fa-slack"></i></a>
+            <div>
+                <ul class="head">
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="home_page.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div id="bar"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown">
+          <li><a href="home_page.html">Home</a></li>
+          <li><a href="home_page.html">Shop</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+  </div>
+    </section>
+    <script>
+      const bar = document.querySelector('#bar');
+      const dropdown = document.querySelector('.dropdown');
+      bar.onclick = function () {
+          dropdown.style.display="block";
+
+          setTimeout(function(){
+              dropdown.style.display="none";
+          },4000)
+      };
+  </script>
+    <section class="body1">
+        <div class="payment-form">
+            <h2>UPI Payment</h2>
+            <form id="makePaymentBtn">
+              <label for="amount">Amount:</label>
+              <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
+              
+              <label for="upiId">UPI ID:</label>
+              <input type="text" id="upiId" name="upiId" placeholder="Enter UPI ID" required>
+              
+              <input type="submit" value="Make Payment" >
+            </form>
+            
+            <div class="qr-code">
+              <img src="https://raw.githubusercontent.com/kingpasan/Random-QR-PNG-Generator/master/00fbfc57fe.png" alt="QR Code">
+              <p>Scan the QR code to complete the payment.</p>
+            </div>
+          </div>
+    </section>
+    <div id="paymentStatus" class="payment-status">
+        <div class="tick">
+          <div class="tick__icon"></div>
+        </div>
+        <p>Payment Successful!</p>
+      </div>
+
+      <script>
+        document.getElementById("makePaymentBtn").addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var body1 = document.querySelector(".body1");
+        var paymentStatus = document.getElementById("paymentStatus");
+        
+        body1.style.display = "none";
+        paymentStatus.style.display="block";
+        
+        var tick = document.querySelector(".tick");
+        tick.style.opacity = "1";
+        tick.style.transform = "scale(1)";
+        });
+
+      </script>
+</body>
+</html>

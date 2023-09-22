@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>ABOUT US</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #EEEEEE;
+  /* background-image: url("https://wallpapercave.com/wp/gQSAMah.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+img{
+    border-radius: 50%;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.head li {
+    list-style: none;
+}
+
+.head a {
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    height: 10vh;;
+    
+}
+#header1{
+    background: #191825;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.06);
+    border-radius: 2px;
+}
+.logo {
+    font-size: 300%;
+}
+
+.head {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.head li a {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.head a:hover {
+    color: #FF0060;
+}
+.dropdown {
+    display: none;
+}
+.dropdown li{
+    list-style: none;
+    
+    
+    text-align:center ;
+    padding:6px;
+}
+.dropdown li a{
+    font-size:1.9rem;
+    color:white;
+    font-weight: 600;
+}
+.dropdown a:hover {
+    color: #B70404;
+}
+a{
+    text-decoration: none;
+}
+#header #bar{
+    display:none;
+    cursor: pointer ;
+    font-size:1.5rem;
+    color: white;
+}
+
+@media (max-width:900px) {
+    .head {
+        display:none;
+    }
+    #header #bar{
+        display:block;
+    }
+    
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.column {
+  width: 19%;
+  padding: 0 8px;
+  
+  border-radius: 3%;
+  border: 1px solid black;
+  margin: 20px auto;
+transition: 0.2s ease;
+}
+.column:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: white;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(233, 10, 10);
+  font-weight: bolder;
+  font-size:larger;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .column {
+    width: 100%;
+    display: block;
+
+  }
+}
+</style>
+</head>
+<body>
+<!-- Nav bar header -->
+<section id="header1">
+    <div id="header">
+        <a href="#" class="logo"><i class="fa-brands fa-slack"></i></a>
+        <div>
+            <ul class="head">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="home_page.html">Shop</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div id="bar"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="dropdown">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="home_page.html">Shop</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </div>
+</section>
+<script>
+  const bar = document.querySelector('#bar');
+  const dropdown = document.querySelector('.dropdown');
+  bar.onclick = function () {
+      dropdown.style.display="block";
+
+      setTimeout(function(){
+          dropdown.style.display="none";
+      },2000)
+  };
+</script>
+
+<!-- Nav bar header close-->
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>...THIS WEBSITE IS MADE BY STUDENTS OF NIT KKR...</p>
+      </div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://easydrawingguides.com/wp-content/uploads/2022/11/Low-Res-Kamado-Tanjiro-from-Demon-Slayer.png" alt="ANSH"width="200" height="200">
+        <div class="container">
+          <h2>ANSH GARG</h2>
+          <p class="title">Team Member</p>
+          <p>PERSUATING B.TECH FROM NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA .</p>
+          <p>12212087@nitkkr.ac.in</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="column">
+        <div class="card">
+            <img src="https://www.egames.news/__export/1643572886869/sites/debate/img/2022/01/30/demon_slayer_hace_un_cambio_en_zenitsu_que_ha_molestado_mucho_a_los_fans.jpg_1902800913.jpg" alt="Faisal"width="200" height="200">
+          <div class="container">
+            <h2>FAISAL JAMIL</h2>
+            <p class="title">Team Member</p>
+            <p>PERSUATING B.TECH FROM NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA   .</p>
+            <p>12212092@nitkkr.ac.in</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <img src="https://staticg.sportskeeda.com/editor/2022/06/55305-16564272130141-1920.jpg" width="200" height="200">
+          <div class="container">
+            <h2>HARSH SINHA</h2>
+            <p class="title">Team Member</p>
+            <p>PERSUATING B.TECH FROM NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA   .</p>
+            <p>12212090@nitkkr.ac.in</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+           <img src="https://i.ytimg.com/vi/YL75j2oLJEw/maxresdefault.jpg" alt="GAURAV" width="200" height="200">
+          <div class="container">
+            <h2>GAURAV KUMAR</h2>
+            <p class="title">Team Member</p>
+            <p>PERSUATING B.TECH FROM NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA   .</p>
+            <p>12212100@nitkkr.ac.in</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+        <img src="https://cdn.oneesports.gg/cdn-data/2023/05/Anime_DemonSlayer_MuichiroTokito_MistHashira_2.jpg" alt="ANKIT" width="200" height="200" >
+          <div class="container">
+            <h2>ANKIT KUMAR</h2>
+            <p class="title">Team Member</p>
+            <p>PERSUATING B.TECH FROM NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA   .</p>
+            <p>12212091@nitkkr.ac.in</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+</body>
+</html>
